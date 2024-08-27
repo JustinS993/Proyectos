@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Indica que el idioma de la página es español -->
+
+<head>
+    <meta charset="utf-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <title>KOPPEE - Plantilla HTML para Cafetería</title> <!-- Título de la página -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!-- Configura la vista para dispositivos móviles -->
+    <meta content="Plantilla de Sitio Web Gratuita" name="keywords"> <!-- Palabras clave para motores de búsqueda -->
+    <meta content="Plantilla de Sitio Web Gratuita" name="description"> <!-- Descripción de la página para motores de búsqueda -->
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon"> <!-- Enlace al ícono de la página (favicon) -->
+
+    <!-- Fuente de Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Preconecta con el dominio de fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <!-- Enlace a las fuentes Montserrat y Roboto de Google -->
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> <!-- Enlace a los estilos de Font Awesome -->
+
+    <!-- Hoja de Estilos de Bibliotecas -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> <!-- Estilos para el carrusel (owl.carousel) -->
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" /> <!-- Estilos para el selector de fecha y hora (tempusdominus) -->
+
+    <!-- Hoja de Estilos de Bootstrap Personalizada -->
+    <link href="css/style.min.css" rel="stylesheet"> <!-- Enlace a la hoja de estilos personalizada de Bootstrap -->
+</head>
+
+<body>
+    <!-- Inicio de la Barra de Navegación -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h1 class="m-0 display-4 text-uppercase text-white">KOPPEE</h1> <!-- Marca de la barra de navegación con el nombre del sitio -->
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span> <!-- Botón para colapsar o expandir la barra de navegación en dispositivos móviles -->
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a> <!-- Enlace a la página de inicio -->
+                    <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a> <!-- Enlace a la página "Sobre Nosotros" -->
+                    <a href="service.html" class="nav-item nav-link">Servicios</a> <!-- Enlace a la página de servicios -->
+                    <a href="menu.html" class="nav-item nav-link">Menú</a> <!-- Enlace a la página del menú -->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Páginas</a> <!-- Menú desplegable para otras páginas -->
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="reservation.html" class="dropdown-item">Reservación</a> <!-- Enlace a la página de reservación -->
+                            <a href="testimonial.html" class="dropdown-item">Testimonios</a> <!-- Enlace a la página de testimonios -->
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a> <!-- Enlace a la página de contacto -->
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Fin de la Barra de Navegación -->
+
+    <!-- Inicio del Carrusel -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide overlay-bottom" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Imagen">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-primary font-weight-medium m-0">Hemos Estado Sirviendo</h2>
+                        <h1 class="display-1 text-white m-0">CAFÉ</h1>
+                        <h2 class="text-white m-0">* DESDE 1950 *</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Imagen">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-primary font-weight-medium m-0">Hemos Estado Sirviendo</h2>
+                        <h1 class="display-1 text-white m-0">CAFÉ</h1>
+                        <h2 class="text-white m-0">* DESDE 1950 *</h2>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span> <!-- Botón para ir a la diapositiva anterior del carrusel -->
+            </a>
+            <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span> <!-- Botón para ir a la siguiente diapositiva del carrusel -->
+            </a>
+        </div>
+    </div>
+    <!-- Fin del Carrusel -->
+
+    <!-- Inicio de la Sección "Sobre Nosotros" -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Sobre Nosotros</h4>
+                <h1 class="display-4">Sirviendo Desde 1950</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Nuestra Historia</h1>
+                    <h5 class="mb-3">En KOPPEE, una cafetería en Popayan, Ana y Javier crearon un rincón acogedor que se convirtió en el favorito de la ciudad.</h5>
+                    <p>Nuestro sitio web te invita a explorar su menú, leer testimonios de clientes satisfechos y mantenerse al tanto de eventos y ofertas especiales.</p>
+                    <a href="" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Saber Más</a> <!-- Botón para aprender más sobre la historia -->
+                </div>
+                <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="img/about.png" style="object-fit: cover;"> <!-- Imagen sobre la historia -->
+                    </div>
+                </div>
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Nuestra Visión</h1>
+                    <p>En KOPPEE, nuestra visión es ser el refugio urbano donde cada taza de café cuenta una historia y cada rincón refleja calidez y comunidad.</p>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Experiencia Acogedora</h5> <!-- Puntos destacados de la visión -->
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Café de Calidad</h5>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Conexión Comunitaria</h5>
+                    <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Saber Más</a> <!-- Botón para aprender más sobre la visión -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de la Sección "Sobre Nosotros" -->
+
+    <!-- Inicio de Servicios -->
+<div class="container-fluid pt-5">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Nuestros Servicios</h4>
+            <h1 class="display-4">Granos Frescos y Orgánicos</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-sm-5">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/service-1.jpg" alt="">
+                    </div>
+                    <div class="col-sm-7">
+                        <h4><i class="fa fa-truck service-icon"></i>Entrega a Domicilio Más Rápida</h4>
+                        <p class="m-0">Disfruta de tu café favorito en la comodidad de tu hogar con nuestro servicio de entrega exprés. Garantizamos una entrega rápida y eficiente para que tu bebida llegue fresca y a tiempo, justo cuando más la necesitas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-sm-5">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/service-2.jpg" alt="">
+                    </div>
+                    <div class="col-sm-7">
+                        <h4><i class="fa fa-coffee service-icon"></i>Granos de Café Frescos</h4>
+                        <p class="m-0">Nuestros granos de café frescos son seleccionados con esmero para garantizar un sabor vibrante y auténtico en cada taza. Tostados a la perfección, preservan su aroma y calidad excepcionales, ofreciendo una experiencia de café que despierta todos los sentidos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-sm-5">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/service-3.jpg" alt="">
+                    </div>
+                    <div class="col-sm-7">
+                        <h4><i class="fa fa-award service-icon"></i>Mejor Calidad de Café</h4>
+                        <p class="m-0">En KOPPEE, nos enorgullecemos de ofrecer café de la más alta calidad. Seleccionamos granos excepcionales y los preparamos con precisión para garantizar un sabor rico y sofisticado en cada taza. Cada sorbo refleja nuestro compromiso con la excelencia y el arte del café.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="row align-items-center">
+                    <div class="col-sm-5">
+                        <img class="img-fluid mb-3 mb-sm-0" src="img/service-4.jpg" alt="">
+                    </div>
+                    <div class="col-sm-7">
+                        <h4><i class="fa fa-table service-icon"></i>Reserva de Mesa en Línea</h4>
+                        <p class="m-0">Reserva tu mesa en KOPPEE de manera rápida y sencilla con nuestra opción en línea. Selecciona la fecha y hora que prefieras, y asegúrate un lugar en nuestro acogedor café para disfrutar de una experiencia inolvidable sin esperas. ¡Haz tu reserva hoy y ven a compartir momentos especiales con nosotros!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de Servicios -->
+
+
+<!-- Inicio de Oferta -->
+<div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
+    <div class="container py-5">
+        <h1 class="display-3 text-primary mt-3">50% DE DESCUENTO</h1>
+        <h1 class="text-white mb-3">Oferta Especial de Domingo</h1>
+        <h4 class="text-white font-weight-normal mb-4 pb-3">Solo los domingos y días festivos</h4>
+        <form class="form-inline justify-content-center mb-4">
+            <div class="input-group">
+                <input type="text" class="form-control p-4" placeholder="Tu Correo Electrónico" style="height: 60px;">
+                <div class="input-group-append">
+                    <button class="btn btn-primary font-weight-bold px-4" type="submit">Regístrate</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Fin de Oferta -->
+
+
+<!-- Inicio del Menú -->
+<div class="container-fluid pt-5">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menú y Precios</h4>
+            <h1 class="display-4">Precios Competitivos</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="mb-5">Café Caliente</h1>
+                <div class="row align-items-center mb-5">
+                    <div class="col-4 col-sm-3">
+                        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
+                        <h5 class="menu-price">$5</h5>
+                    </div>
+                    <div class="col-8 col-sm-9">
+                        <h4>Café Negro</h4>
+                        <p class="m-0">Disfruta de nuestro café negro, preparado con granos de alta calidad para ofrecerte un sabor robusto y puro en cada sorbo. Perfecto para los amantes del café que buscan una experiencia intensa y auténtica.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-4 col-sm-3">
+                        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
+                        <h5 class="menu-price">$7</h5>
+                    </div>
+                    <div class="col-8 col-sm-9">
+                        <h4>Café con Chocolate</h4>
+                        <p class="m-0">Disfruta de la combinación perfecta de café y chocolate en nuestra bebida caliente. Un espresso intenso mezclado con suave chocolate derretido, creando una experiencia rica y reconfortante en cada sorbo. ¡El placer de lo mejor de ambos mundos en una taza!</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-4 col-sm-3">
+                        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
+                        <h5 class="menu-price">$9</h5>
+                    </div>
+                    <div class="col-8 col-sm-9">
+                        <h4>Café con Leche</h4>
+                        <p class="m-0">Disfruta de un clásico café con leche en KOPPEE: una mezcla perfecta de café espresso fuerte y leche vaporizada, suavemente combinada para ofrecerte una bebida cálida, cremosa y reconfortante en cada sorbo. Ideal para cualquier momento del día.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h1 class="mb-5">Café Frío</h1>
+                <div class="row align-items-center mb-5">
+                    <div class="col-4 col-sm-3">
+                        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
+                        <h5 class="menu-price">$5</h5>
+                    </div>
+                    <div class="col-8 col-sm-9">
+                        <h4>Café Negro</h4>
+                        <p class="m-0">Disfruta de nuestro café negro, preparado con granos de alta calidad y servido bien frío. Su sabor intenso y puro es perfecto para los amantes del café que buscan una experiencia refrescante y revitalizante.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-4 col-sm-3">
+                        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
+                        <h5 class="menu-price">$7</h5>
+                    </div>
+                    <div class="col-8 col-sm-9">
+                        <h4>Café con Chocolate</h4>
+                        <p class="m-0">Disfruta de nuestro delicioso café con chocolate: una mezcla perfecta de café suave y chocolate cremoso, servida fría para una experiencia refrescante y indulgente. Ideal para quienes buscan una dulce pausa con un toque de café.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-4 col-sm-3">
+                        <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
+                        <h5 class="menu-price">$9</h5>
+                    </div>
+                    <div class="col-8 col-sm-9">
+                        <h4>Café con Leche</h4>
+                        <p class="m-0">Disfruta de nuestro suave y cremoso café con leche, preparado con una mezcla equilibrada de café fuerte y leche espumosa. Ideal para una pausa refrescante a cualquier hora del día.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin del Menú -->
+
+   <!-- Inicio de la Sección de Reservas -->
+<div class="container-fluid my-5">
+    <div class="container">
+        <div class="reservation position-relative overlay-top overlay-bottom">
+            <div class="row align-items-center">
+                <div class="col-lg-6 my-5 my-lg-0">
+                    <div class="p-5">
+                        <div class="mb-4">
+                            <h1 class="display-3 text-primary">30% DE DESCUENTO</h1>
+                            <h1 class="text-white">Por Reserva en Línea</h1>
+                        </div>
+                        <p class="text-white">¡Aprovecha un 30% de descuento en tu próxima visita reservando en línea! Solo tienes que hacer tu reserva a través de nuestro sitio web y disfruta de esta oferta exclusiva. ¡No te lo pierdas!</p>
+                        <ul class="list-inline text-white m-0">
+                            <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>¡30% de Descuento Solo por Reservar en Línea!</li>
+                            <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Reserva Rápida y Fácil</li>
+                            <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Disfruta y Ahorra</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                        <h1 class="text-white mb-4 mt-5">Reserva Tu Mesa</h1>
+                        <form class="mb-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control bg-transparent border-primary p-4" placeholder="Nombre"
+                                    required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control bg-transparent border-primary p-4" placeholder="Correo Electrónico"
+                                    required="required" />
+                            </div>
+                            <div class="form-group">
+                                <div class="date" id="date" data-target-input="nearest">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Fecha" data-target="#date" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="time" id="time" data-target-input="nearest">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4 datetimepicker-input" placeholder="Hora" data-target="#time" data-toggle="datetimepicker"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select bg-transparent border-primary px-4" style="height: 49px;">
+                                    <option selected>Persona</option>
+                                    <option value="1">Persona 1</option>
+                                    <option value="2">Persona 2</option>
+                                    <option value="3">Persona 3</option>
+                                    <option value="4">Persona 4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block font-weight-bold py-3" type="submit">Reservar Ahora</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de la Sección de Reservas -->
+
+<!-- Inicio de la Sección de Testimonios -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonios</h4>
+            <h1 class="display-4">Lo Que Dicen Nuestros Clientes</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid" src="img/testimonial-1.jpg" alt="">
+                    <div class="ml-3">
+                        <h4>Maria Fernandes</h4>
+                        <i>Ing. Fisica</i>
+                    </div>
+                </div>
+                <p class="m-0">La precisión en cada taza de café es impresionante. Cada visita a KOPPEE es una experiencia científicamente perfecta. ¡Altamente recomendado para quienes buscan calidad y detalle!</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid" src="img/testimonial-2.jpg" alt="">
+                    <div class="ml-3">
+                        <h4>Carlos garcia</h4>
+                        <i>cocinero</i>
+                    </div>
+                </div>
+                <p class="m-0">Como amante de la cocina, aprecio los sabores auténticos y bien equilibrados. El café de KOPPEE nunca me decepciona. Un lugar perfecto para relajarse después de un día en la cocina.</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid" src="img/testimonial-3.jpg" alt="">
+                    <div class="ml-3">
+                        <h4>Ana Díaz</h4>
+                        <i>Profesor</i>
+                    </div>
+                </div>
+                <p class="m-0">El ambiente tranquilo y la excelente calidad del café hacen de KOPPEE el lugar ideal para preparar mis clases o simplemente disfrutar de una buena charla con colegas. Un rincón de paz en la ciudad.</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="d-flex align-items-center mb-3">
+                    <img class="img-fluid" src="img/testimonial-4.jpg" alt="">
+                    <div class="ml-3">
+                        <h4>Carla López</h4>
+                        <i>Estudiante</i>
+                    </div>
+                </div>
+                <p class="m-0">Me encanta estudiar en KOPPEE! El café es delicioso y el ambiente es perfecto para concentrarse. Además, los descuentos para estudiantes son un gran plus. ¡Siempre vuelvo por más!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de la Sección de Testimonios -->
+
+
+<!-- Inicio del Pie de Página -->
+<div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+    <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Contáctanos</h4>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>123 Calle, Popayan, Colombia.</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@ejemplo.com</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Síguenos</h4>
+            <p>En KOPPEE, cada taza de café es un abrazo cálido para el alma y una sonrisa para el corazón.</p>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <!-- Más contenido del pie de página... -->
+    </div>
+    <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <p class="mb-2 text-white">Derechos de Autor &copy; <a class="font-weight-bold" href="#">Dominio</a>. Todos los Derechos Reservados.</p>
+        <p class="m-0 text-white">Diseñado por <a class="font-weight-bold" href="https://htmlcodex.com">HTML Codex</a></p>
+    </div>
+</div>
+<!-- Fin del Pie de Página -->
+
+    <!-- Volver al inicio -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+    <i class="fa fa-angle-double-up"></i>
+</a>
+
+<!-- Bibliotecas de JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Archivo de JavaScript para el contacto -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- JavaScript de la plantilla -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
