@@ -2,149 +2,176 @@
 <html lang="es">
 
 <head>
+    <!-- META TAGS BÁSICOS -->
     <meta charset="utf-8">
-    <title>KOPPEE - Plantilla HTML para Cafetería</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Plantilla de sitio web gratuita" name="keywords">
-    <meta content="Plantilla de sitio web gratuita" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- META TAGS SEO -->
+    <title>Menú - KOPPEE Café | Sabores Auténticos desde 1950</title>
+    <meta name="description" content="Explora nuestro menú de cafés artesanales, bebidas especiales y deliciosos acompañamientos. Descubre la experiencia única de KOPPEE.">
+    <meta name="keywords" content="café, menú, cafetería, KOPPEE, café artesanal, precios, bebidas calientes, postres">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- RECURSOS LOCALES -->
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css">
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Hojas de estilo de bibliotecas -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Hoja de estilo personalizada de Bootstrap -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <!-- BIBLIOTECAS EXTERNAS -->
+    <!-- Font Awesome - Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css">
 </head>
 
 <body>
-    <!-- Inicio de la barra de navegación -->
-    <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <header class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3" aria-label="Navegación principal">
+            <!-- Logo y Nombre del Sitio -->
+            <a href="index.html" class="navbar-brand px-lg-4 m-0" aria-label="KOPPEE - Inicio">
                 <h1 class="m-0 display-4 text-uppercase text-white">KOPPEE</h1>
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+
+            <!-- Botón de Menú Móvil -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Menú de Navegación -->
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4">
+                    <!-- Enlaces Principales -->
                     <a href="index.html" class="nav-item nav-link">Inicio</a>
                     <a href="about.html" class="nav-item nav-link">Sobre nosotros</a>
                     <a href="service.html" class="nav-item nav-link">Servicio</a>
-                    <a href="menu.html" class="nav-item nav-link active">Menú</a>
+                    <a href="menu.html" class="nav-item nav-link active" aria-current="page">Menú</a>
+
+                    <!-- Menú Desplegable -->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Páginas</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Páginas</a>
                         <div class="dropdown-menu text-capitalize">
                             <a href="reservation.html" class="dropdown-item">Reservación</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonios</a>
                         </div>
                     </div>
+
                     <a href="contact.html" class="nav-item nav-link">Contacto</a>
                 </div>
             </div>
         </nav>
-    </div>
-    <!-- Fin de la barra de navegación -->
+    </header>
 
-
-    <!-- Inicio del encabezado de la página -->
-    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+    <!-- ENCABEZADO DE PÁGINA -->
+    <section class="container-fluid page-header mb-5 position-relative overlay-bottom">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Menú</h1>
-            <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">Inicio</a></p>
-                <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Menú</p>
-            </div>
+            <h2 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Nuestro Menú</h2>
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb" class="d-inline-flex mb-lg-5">
+                <ol class="breadcrumb bg-transparent m-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Inicio</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Menú</li>
+                </ol>
+            </nav>
         </div>
-    </div>
-    <!-- Fin del encabezado de la página -->
+    </section>
 
 
-    <!-- Inicio del menú -->
-    <div class="container-fluid pt-5">
+    <!-- SECCIÓN: MENÚ -->
+    <main class="container-fluid pt-5">
         <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menú y Precios</h4>
-                <h1 class="display-4">Precios Competitivos</h1>
-            </div>
+            <!-- Encabezado de la Sección -->
+            <header class="section-title text-center mb-5">
+                <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Menú y Precios</h2>
+                <p class="display-4 mb-0">Precios Competitivos</p>
+            </header>
+
+            <!-- Contenido del Menú -->
             <div class="row">
-                <div class="col-lg-6">
-                    <h1 class="mb-5">Café Caliente</h1>
-                    <div class="row align-items-center mb-5">
+                <!-- Sección: Café Caliente -->
+                <section class="col-lg-6" aria-labelledby="hot-coffee-title">
+                    <h3 id="hot-coffee-title" class="mb-5">Café Caliente</h3>
+                    
+                    <!-- Producto: Café Negro -->
+                    <article class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
-                            <h5 class="menu-price">$5</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="Taza de café negro humeante" loading="lazy">
+                            <div class="menu-price">$5</div>
                         </div>
                         <div class="col-8 col-sm-9">
                             <h4>Café Negro</h4>
                             <p class="m-0">Disfruta de nuestro café negro, preparado con granos de alta calidad para ofrecerte un sabor robusto y puro en cada sorbo. Perfecto para los amantes del café que buscan una experiencia intensa y auténtica.</p>
                         </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
+                    </article>
+                    <!-- Producto: Café con Chocolate -->
+                    <article class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
-                            <h5 class="menu-price">$7</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="Café con chocolate decorado con crema" loading="lazy">
+                            <div class="menu-price">$7</div>
                         </div>
                         <div class="col-8 col-sm-9">
                             <h4>Café con Chocolate</h4>
-                            <p class="m-0">Disfruta de la combinación perfecta de café y chocolate en nuestra bebida caliente. Un espresso intenso mezclado con suave chocolate derretido, creando una experiencia rica y reconfortante en cada sorbo. ¡El placer de lo mejor de ambos mundos en una taza!</p>
+                            <p class="m-0">Una deliciosa mezcla de café y chocolate que te transportará a un mundo de sabores. El equilibrio perfecto entre el amargor del café y la dulzura del chocolate.</p>
                         </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
+                    </article>
+
+                    <!-- Producto: Café con Leche -->
+                    <article class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
-                            <h5 class="menu-price">$9</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="Café con leche con arte latte" loading="lazy">
+                            <div class="menu-price">$9</div>
                         </div>
                         <div class="col-8 col-sm-9">
                             <h4>Café con Leche</h4>
-                            <p class="m-0">Disfruta de un clásico café con leche en KOPPEE: una mezcla perfecta de café espresso fuerte y leche vaporizada, suavemente combinada para ofrecerte una bebida cálida, cremosa y reconfortante en cada sorbo. Ideal para cualquier momento del día.</p>
+                            <p class="m-0">Nuestro café con leche es la combinación perfecta de café recién hecho y leche cremosa. Un clásico reconfortante que nunca pasa de moda.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="mb-5">Café Frío</h1>
-                    <div class="row align-items-center mb-5">
+                    </article>
+                </section>
+
+                <!-- Sección: Bebidas Frías -->
+                <section class="col-lg-6" aria-labelledby="cold-drinks-title">
+                    <h3 id="cold-drinks-title" class="mb-5">Bebidas Frías</h3>
+
+                    <!-- Producto: Café Helado -->
+                    <article class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="">
-                            <h5 class="menu-price">$5</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-1.jpg" alt="Café helado con crema batida" loading="lazy">
+                            <div class="menu-price">$5</div>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Café Negro</h4>
-                            <p class="m-0">Disfruta de nuestro café negro, preparado con granos de alta calidad y servido bien frío. Su sabor intenso y puro es perfecto para los amantes del café que buscan una experiencia refrescante y revitalizante.</p>
+                            <h4>Café Helado</h4>
+                            <p class="m-0">Refrescante café helado, perfecto para los días calurosos. Preparado con nuestro café especial y servido sobre hielo cristalino para mantener todo el sabor.</p>
                         </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
+                    </article>
+
+                    <!-- Producto: Chocolate Helado -->
+                    <article class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="">
-                            <h5 class="menu-price">$7</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-2.jpg" alt="Chocolate helado con topping de chocolate" loading="lazy">
+                            <div class="menu-price">$7</div>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Café con Chocolate</h4>
-                            <p class="m-0">Disfruta de nuestro delicioso café con chocolate: una mezcla perfecta de café suave y chocolate cremoso, servida fría para una experiencia refrescante y indulgente. Ideal para quienes buscan una dulce pausa con un toque de café.</p>
+                            <h4>Chocolate Helado</h4>
+                            <p class="m-0">Delicioso chocolate helado, preparado con chocolate premium y servido con crema batida. Una experiencia refrescante y dulce.</p>
                         </div>
-                    </div>
-                    <div class="row align-items-center mb-5">
+                    </article>
+
+                    <!-- Producto: Frappé de Café -->
+                    <article class="row align-items-center mb-5">
                         <div class="col-4 col-sm-3">
-                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="">
-                            <h5 class="menu-price">$9</h5>
+                            <img class="w-100 rounded-circle mb-3 mb-sm-0" src="img/menu-3.jpg" alt="Frappé de café con decoración de caramelo" loading="lazy">
+                            <div class="menu-price">$9</div>
                         </div>
                         <div class="col-8 col-sm-9">
-                            <h4>Café con Leche</h4>
-                            <p class="m-0">Disfruta de nuestro suave y cremoso café con leche, preparado con una mezcla equilibrada de café fuerte y leche espumosa. Ideal para una pausa refrescante a cualquier hora del día.</p>
+                            <h4>Frappé de Café</h4>
+                            <p class="m-0">Bebida helada y cremosa, mezclada con café premium, leche y hielo. Coronada con crema batida y un toque de caramelo.</p>
                         </div>
-                    </div>
-                </div>
+                    </article>
+                </section>
             </div>
         </div>
     </div>

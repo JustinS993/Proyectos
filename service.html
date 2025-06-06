@@ -2,50 +2,54 @@
 <html lang="es">
 
 <head>
+    <!-- META TAGS BÁSICOS -->
     <meta charset="utf-8">
-    <title>KOPPEE - Plantilla HTML para Cafetería</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Plantilla de Sitio Web Gratis" name="keywords">
-    <meta content="Plantilla de Sitio Web Gratis" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- META TAGS SEO -->
+    <title>Servicios de KOPPEE Café | Experiencias Únicas en Café</title>
+    <meta name="description" content="Descubre nuestros servicios especializados en café: desde baristas expertos hasta eventos personalizados. Experiencia y calidad en cada taza de KOPPEE.">
+    <meta name="keywords" content="servicios café, barista profesional, café gourmet, eventos café, catering café, KOPPEE servicios">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- RECURSOS LOCALES -->
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.min.css">
 
-    <!-- Fuente de Google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Hojas de Estilo de Bibliotecas -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Hoja de Estilo Personalizada de Bootstrap -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <!-- BIBLIOTECAS EXTERNAS -->
+    <!-- Font Awesome - Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+    
+    <!-- Plugins -->
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css">
 </head>
 
 <body>
-    <!-- Inicio de la Barra de Navegación -->
-    <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <header class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3" aria-label="Navegación principal">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0" aria-label="KOPPEE - Ir a inicio">
                 <h1 class="m-0 display-4 text-uppercase text-white">KOPPEE</h1>
             </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" 
+                aria-expanded="false" aria-label="Alternar menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
+                <div class="navbar-nav ml-auto p-4" role="navigation">
                     <a href="index.html" class="nav-item nav-link">Inicio</a>
                     <a href="about.html" class="nav-item nav-link">Acerca de</a>
-                    <a href="service.html" class="nav-item nav-link active">Servicio</a>
+                    <a href="service.html" class="nav-item nav-link active" aria-current="page">Servicios</a>
                     <a href="menu.html" class="nav-item nav-link">Menú</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Páginas</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="reservation.html" class="dropdown-item">Reserva</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" 
+                            aria-expanded="false" aria-haspopup="true" aria-label="Menú desplegable de páginas">Páginas</a>
+                        <div class="dropdown-menu text-capitalize" aria-label="Submenú de páginas">
+                            <a href="reservation.html" class="dropdown-item">Reservación</a>
                             <a href="testimonial.html" class="dropdown-item">Testimonios</a>
                         </div>
                     </div>
@@ -53,151 +57,195 @@
                 </div>
             </div>
         </nav>
-    </div>
-    <!-- Fin de la Barra de Navegación -->
+    </header>
 
-
-    <!-- Inicio del Encabezado de la Página -->
-    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+    <!-- ENCABEZADO DE PÁGINA -->
+    <section class="container-fluid page-header mb-5 position-relative overlay-bottom">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Servicios</h1>
-            <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">Inicio</a></p>
-                <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Servicios</p>
-            </div>
+            <h2 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Nuestros Servicios</h2>
+            <nav class="d-inline-flex mb-lg-5" aria-label="Breadcrumb">
+                <ol class="breadcrumb bg-transparent m-0 p-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Servicios</li>
+                </ol>
+            </nav>
         </div>
-    </div>
-    <!-- Fin del Encabezado de la Página -->
+    </section>
 
 
-    <!-- Inicio del Servicio -->
-    <div class="container-fluid pt-5">
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section class="container-fluid pt-5" id="servicios">
         <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Nuestros Servicios</h4>
-                <h1 class="display-4">Granos Frescos y Orgánicos</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
+            <header class="section-title text-center">
+                <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Nuestros Servicios</h2>
+                <h3 class="display-4">Experiencias Únicas en Café</h3>
+            </header>
+
+            <div class="row" role="list">
+                <!-- SERVICIO A DOMICILIO -->
+                <div class="col-lg-6 mb-5" role="listitem">
+                    <article class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-1.jpg" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-1.jpg" 
+                                alt="Motocicleta de entrega a domicilio de KOPPEE" loading="lazy">
                         </div>
                         <div class="col-sm-7">
-                            <h4><i class="fa fa-truck service-icon"></i>Entrega Rápida a Domicilio</h4>
-                            <p class="m-0">Disfruta de tu café favorito en la comodidad de tu hogar con nuestro servicio de entrega exprés. Garantizamos una entrega rápida y eficiente para que tu bebida llegue fresca y a tiempo, justo cuando más la necesitas.</p>
+                            <h4><i class="fa fa-truck service-icon" aria-hidden="true"></i>Servicio a Domicilio</h4>
+                            <p class="m-0">Disfruta de nuestro café premium en la comodidad de tu hogar u oficina. Entrega rápida y segura para mantener el sabor y la temperatura perfecta.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
+
+                <!-- CAFÉ RECIÉN PREPARADO -->
+                <div class="col-lg-6 mb-5" role="listitem">
+                    <article class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-2.jpg" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-2.jpg" 
+                                alt="Barista preparando café fresco" loading="lazy">
                         </div>
                         <div class="col-sm-7">
-                            <h4><i class="fa fa-coffee service-icon"></i>Granos de Café Frescos</h4>
-                            <p class="m-0">Nuestros granos de café frescos son seleccionados con esmero para garantizar un sabor vibrante y auténtico en cada taza. Tostados a la perfección, preservan su aroma y calidad excepcionales, ofreciendo una experiencia de café que despierta todos los sentidos.</p>
+                            <h4><i class="fa fa-coffee service-icon" aria-hidden="true"></i>Café Recién Preparado</h4>
+                            <p class="m-0">Cada taza preparada al momento por nuestros expertos baristas, utilizando granos seleccionados y técnicas artesanales para un sabor excepcional.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
+
+                <!-- CALIDAD PREMIUM -->
+                <div class="col-lg-6 mb-5" role="listitem">
+                    <article class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-3.jpg" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-3.jpg" 
+                                alt="Certificado de calidad premium de café" loading="lazy">
                         </div>
                         <div class="col-sm-7">
-                            <h4><i class="fa fa-award service-icon"></i>Café de Mejor Calidad</h4>
-                            <p class="m-0">En KOPPEE, nos enorgullecemos de ofrecer café de la más alta calidad. Seleccionamos granos excepcionales y los preparamos con precisión para garantizar un sabor rico y sofisticado en cada taza. Cada sorbo refleja nuestro compromiso con la excelencia y el arte del café.</p>
+                            <h4><i class="fa fa-award service-icon" aria-hidden="true"></i>Calidad Premium</h4>
+                            <p class="m-0">Trabajamos con los mejores productores de café para garantizar granos de primera calidad, tostados a la perfección para resaltar sus notas únicas.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <div class="col-lg-6 mb-5">
-                    <div class="row align-items-center">
+
+                <!-- RESERVACIONES EN LÍNEA -->
+                <div class="col-lg-6 mb-5" role="listitem">
+                    <article class="row align-items-center">
                         <div class="col-sm-5">
-                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-4.jpg" alt="">
+                            <img class="img-fluid mb-3 mb-sm-0" src="img/service-4.jpg" 
+                                alt="Sistema de reservaciones online de KOPPEE" loading="lazy">
                         </div>
                         <div class="col-sm-7">
-                            <h4><i class="fa fa-table service-icon"></i>Reserva de Mesas en Línea</h4>
-                            <p class="m-0">Reserva tu mesa en KOPPEE de manera rápida y sencilla con nuestra opción en línea. Selecciona la fecha y hora que prefieras, y asegúrate un lugar en nuestro acogedor café para disfrutar de una experiencia inolvidable sin esperas. ¡Haz tu reserva hoy y ven a compartir momentos especiales con nosotros!</p>
+                            <h4><i class="fa fa-table service-icon" aria-hidden="true"></i>Reservaciones Online</h4>
+                            <p class="m-0">Reserva tu mesa fácilmente a través de nuestro sistema en línea. Asegura tu espacio y disfruta de un 30% de descuento en reservas anticipadas.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Fin del Servicio -->
+    </section>
 
 
-    <!-- Inicio del Pie de Página -->
-    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+    <!-- PIE DE PÁGINA -->
+    <footer class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <!-- INFORMACIÓN DE CONTACTO -->
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Ponte en Contacto</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Calle 123, Popayan, Colombia.</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Contáctanos</h4>
+                <address>
+                    <p><i class="fa fa-map-marker-alt mr-2" aria-hidden="true"></i>Calle 5 #8-58, Popayán, Colombia</p>
+                    <p><i class="fa fa-phone-alt mr-2" aria-hidden="true"></i><a href="tel:+573225896547" class="text-white">+57 322 589 6547</a></p>
+                    <p class="m-0"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><a href="mailto:info@koppee.com" class="text-white">info@koppee.com</a></p>
+                </address>
             </div>
+            <!-- REDES SOCIALES -->
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Síguenos</h4>
-                <p>En KOPPEE, cada taza de café es un abrazo cálido para el alma y una sonrisa para el corazón.</p>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                <p>Mantente conectado con nosotros en redes sociales para conocer nuestras últimas novedades y promociones especiales.</p>
+                <div class="d-flex justify-content-start" aria-label="Enlaces a redes sociales">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#" aria-label="Síguenos en Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#" aria-label="Síguenos en Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#" aria-label="Síguenos en LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#" aria-label="Síguenos en Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                 </div>
             </div>
+            <!-- HORARIO DE ATENCIÓN -->
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Horario de Apertura</h4>
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Horario</h4>
                 <div>
-                    <h6 class="text-white text-uppercase">Lunes - Viernes</h6>
-                    <p>8.00 AM - 8.00 PM</p>
-                    <h6 class="text-white text-uppercase">Sábado - Domingo</h6>
-                    <p>2.00 PM - 8.00 PM</p>
+                    <h5 class="text-white text-uppercase h6">Lunes - Viernes</h5>
+                    <p>8:00 AM - 8:00 PM</p>
+                    <h5 class="text-white text-uppercase h6">Sábado - Domingo</h5>
+                    <p>2:00 PM - 8:00 PM</p>
                 </div>
             </div>
+            <!-- SUSCRIPCIÓN AL BOLETÍN -->
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Boletín de Noticias</h4>
-                <p>Suscríbete a nuestro boletín y recibe lo mejor de KOPPEE directamente en tu bandeja: ofertas exclusivas, eventos especiales y noticias frescas para que nunca te pierdas de nada. ¡Únete a nuestra comunidad hoy mismo!</p>
-                <div class="w-100">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Boletín Informativo</h4>
+                <p>Suscríbete a nuestro boletín para recibir las últimas noticias y ofertas especiales directamente en tu correo.</p>
+                <form class="w-100" aria-label="Formulario de suscripción al boletín">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Correo Electrónico">
+                        <label for="newsletter-email" class="sr-only">Correo electrónico para boletín</label>
+                        <input type="email" id="newsletter-email" class="form-control border-light" 
+                            style="padding: 25px;" placeholder="Tu correo electrónico" 
+                            required aria-required="true">
                         <div class="input-group-append">
-                            <button class="btn btn-primary font-weight-bold px-3">Suscribirse</button>
+                            <button class="btn btn-primary font-weight-bold px-3" type="submit" 
+                                aria-label="Suscribirse al boletín">Suscribirse</button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
-        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Dominio</a>. Todos los Derechos Reservados.</p>
-            <p class="m-0 text-white">Diseñado por <a class="font-weight-bold" href="https://htmlcodex.com">HTML Codex</a></p>
+        <!-- DERECHOS DE AUTOR -->
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" 
+            style="border-color: rgba(256, 256, 256, .1) !important;">
+            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">KOPPEE</a>. Todos los derechos reservados.</p>
+            <p class="m-0 text-white">Diseñado por <a class="font-weight-bold" href="https://htmlcodex.com" rel="noopener" target="_blank">HTML Codex</a></p>
         </div>
-    </div>
-    <!-- Fin del Pie de Página -->
+    </footer>
 
 
-    <!-- Volver Arriba -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" aria-label="Volver arriba">
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </a>
 
+    <!-- BIBLIOTECAS JAVASCRIPT -->
+    <!-- jQuery y Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
 
-    <!-- Bibliotecas de JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins de Animación y UI -->
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Plugins de Fecha y Hora -->
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Archivo JavaScript de Contacto -->
+    <!-- Scripts de Validación y Contacto -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- JavaScript del Template -->
+    <!-- Script Principal -->
     <script src="js/main.js"></script>
+
+    <!-- Script de Inicialización de Servicios -->
+    <script>
+        $(document).ready(function() {
+            // Inicialización de efectos de desplazamiento suave
+            $('.back-to-top').click(function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop: 0}, 'slow');
+            });
+
+            // Animación de aparición de servicios al hacer scroll
+            $('.service-item').waypoint(function() {
+                $(this.element).addClass('animated fadeIn');
+            }, {
+                offset: '75%'
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,52 +1,60 @@
-/******* Bootstrap Theming ********/
+// ==========================================================================
+// Variables y Configuración de Bootstrap
+// ==========================================================================
 
-$primary: #DA9F5B;
-$secondary: #33211D;
-$light: #FFFBF2;
-$dark: #111111;
+// Colores principales
+$primary: #DA9F5B;    // Color café claro para acentos
+$secondary: #33211D;  // Color café oscuro para textos importantes
+$light: #FFFBF2;      // Color crema para fondos
+$dark: #111111;       // Negro para contraste
 
-$font-family-sans-serif: 'Montserrat',
-sans-serif;
+// Tipografía
+$font-family-sans-serif: 'Montserrat', sans-serif;  // Fuente principal
+$headings-font-family: 'Roboto', sans-serif;         // Fuente para encabezados
+$body-color: #555555;                                // Color de texto general
+$headings-color: $secondary;                         // Color para encabezados
 
-$headings-font-family: 'Roboto',
-sans-serif;
+// Configuración del cuerpo
+$body-bg: $light;        // Color de fondo del sitio
+$display1-size: 8rem;    // Tamaño para títulos grandes
 
-$body-bg: $light;
+// Configuración de Bootstrap
+$enable-responsive-font-sizes: true;  // Habilitar fuentes responsivas
+$enable-rounded: false;               // Deshabilitar bordes redondeados
+$enable-shadows: false;               // Deshabilitar sombras
 
-$body-color: #555555;
-
-$headings-color: $secondary;
-
-$display1-size: 8rem;
-
-$enable-responsive-font-sizes: true;
-
-$enable-rounded: false;
-
-$enable-shadows: false;
-
+// Importar Bootstrap
 @import "bootstrap/scss/bootstrap";
 
 
-/********** Custom CSS ************/
+// ==========================================================================
+// Estilos Personalizados
+// ==========================================================================
+
+// Tipografía
+// --------------------------------------------------------------------------
+// Definición de pesos de fuente para encabezados y clases utilitarias
 h1,
 h2,
 .font-weight-bold {
-    font-weight: 700 !important;
+    font-weight: 700 !important;  // Negrita para títulos principales
 }
 
 h3,
 h4,
 .font-weight-medium {
-    font-weight: 500 !important;
+    font-weight: 500 !important;  // Peso medio para subtítulos
 }
 
 h5,
 h6,
 .font-weight-normal {
-    font-weight: 400 !important;
+    font-weight: 400 !important;  // Peso normal para títulos menores
 }
 
+// Botones Cuadrados
+// --------------------------------------------------------------------------
+// Variantes de tamaño para botones con forma cuadrada
 .btn-square {
     width: 36px;
     height: 36px;
@@ -62,6 +70,7 @@ h6,
     height: 46px;
 }
 
+// Estilos comunes para todos los botones cuadrados
 .btn-square,
 .btn-sm-square,
 .btn-lg-square {
@@ -70,6 +79,8 @@ h6,
     text-align: center;
 }
 
+// Botón Volver Arriba
+// --------------------------------------------------------------------------
 .back-to-top {
     position: fixed;
     display: none;
@@ -80,6 +91,7 @@ h6,
     animation: action 1s infinite alternate;
 }
 
+// Animación del botón Volver Arriba
 @-webkit-keyframes action {
     0% {
         transform: translateY(0);

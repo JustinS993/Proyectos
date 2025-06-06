@@ -2,177 +2,277 @@
 <html lang="es">
 
 <head>
+    <!-- META TAGS BÁSICOS -->
     <meta charset="utf-8">
-    <title>KOPPEE - Plantilla HTML para Cafetería</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Plantilla de Sitio Web Gratis" name="keywords">
-    <meta content="Plantilla de Sitio Web Gratis" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- META TAGS SEO -->
+    <title>KOPPEE - Nuestra Historia y Visión | Cafetería con Tradición desde 1950</title>
+    <meta name="description" content="Descubre la historia de KOPPEE, una cafetería con tradición desde 1950. Conoce nuestra visión, valores y el compromiso con la calidad del café y la comunidad.">
+    <meta name="keywords" content="historia cafetería, café Popayán, tradición café, KOPPEE historia, visión cafetería, café calidad">
+    <meta name="author" content="KOPPEE">
+    
+    <!-- FAVICON -->
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <!-- RECURSOS LOCALES -->
+    <link href="css/style.min.css" rel="stylesheet">
 
-    <!-- Fuente de Google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Estilos de Bibliotecas -->
+    <!-- BIBLIOTECAS EXTERNAS -->
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+    
+    <!-- Plugins -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Estilos Personalizados de Bootstrap -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Inicio de Navbar -->
-    <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
-                <h1 class="m-0 display-4 text-uppercase text-white">KOPPEE</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
-                    <a href="index.html" class="nav-item nav-link">Inicio</a>
-                    <a href="about.html" class="nav-item nav-link active">Acerca de</a>
-                    <a href="service.html" class="nav-item nav-link">Servicio</a>
-                    <a href="menu.html" class="nav-item nav-link">Menú</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Páginas</a>
-                        <div class="dropdown-menu text-capitalize">
-                            <a href="reservation.html" class="dropdown-item">Reserva</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonios</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
-                </div>
+    <!-- BARRA SUPERIOR -->
+    <header class="container-fluid">
+        <!-- Barra de Enlaces y Redes Sociales -->
+        <div class="row bg-secondary py-2 px-xl-5">
+            <!-- Enlaces de Ayuda -->
+            <div class="col-lg-6 d-none d-lg-block">
+                <nav class="d-inline-flex align-items-center" aria-label="Enlaces de ayuda">
+                    <a class="text-white" href="" aria-label="Preguntas frecuentes">FAQs</a>
+                    <span class="text-muted px-2" aria-hidden="true">|</span>
+                    <a class="text-white" href="" aria-label="Página de ayuda">Ayuda</a>
+                    <span class="text-muted px-2" aria-hidden="true">|</span>
+                    <a class="text-white" href="" aria-label="Soporte técnico">Soporte</a>
+                </nav>
             </div>
-        </nav>
-    </div>
-    <!-- Fin de Navbar -->
-
-
-    <!-- Inicio del Encabezado de la Página -->
-    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
-        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Acerca de Nosotros</h1>
-            <div class="d-inline-flex mb-lg-5">
-                <p class="m-0 text-white"><a class="text-white" href="">Inicio</a></p>
-                <p class="m-0 text-white px-2">/</p>
-                <p class="m-0 text-white">Acerca de Nosotros</p>
+            <!-- Redes Sociales -->
+            <div class="col-lg-6 text-center text-lg-right">
+                <nav class="d-inline-flex align-items-center" aria-label="Redes sociales">
+                    <a class="text-white px-3" href="" aria-label="Síguenos en Facebook">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-white px-3" href="" aria-label="Síguenos en Twitter">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-white px-3" href="" aria-label="Síguenos en LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-white px-3" href="" aria-label="Síguenos en Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a class="text-white pl-3" href="" aria-label="Síguenos en YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i>
+                    </a>
+                </nav>
             </div>
         </div>
-    </div>
-    <!-- Fin del Encabezado de la Página -->
 
-
-    <!-- Inicio de Acerca de -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="section-title">
-                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Acerca de Nosotros</h4>
-                <h1 class="display-4">Sirviendo Desde 1950</h1>
+        <!-- Barra de Navegación Principal -->
+        <div class="row py-3 px-xl-5">
+            <!-- Logo -->
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href="index.html" class="text-decoration-none" aria-label="KOPPEE - Inicio">
+                    <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">K</span>OPPEE</h1>
+                </a>
             </div>
+            <!-- Menú de Navegación -->
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0" aria-label="Menú principal">
+                    <a href="index.html" class="text-decoration-none d-block d-lg-none" aria-label="KOPPEE - Inicio">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">K</span>OPPEE</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-label="Alternar menú de navegación">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="index.html" class="nav-item nav-link">Inicio</a>
+                            <a href="about.html" class="nav-item nav-link active" aria-current="page">Nosotros</a>
+                            <a href="service.html" class="nav-item nav-link">Servicios</a>
+                            <a href="menu.html" class="nav-item nav-link">Menú</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Páginas</a>
+                                <div class="dropdown-menu rounded-0 m-0" aria-label="Submenú de páginas">
+                                    <a href="reservation.html" class="dropdown-item">Reservación</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonios</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ENCABEZADO DE PÁGINA -->
+    <section class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h2 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Nosotros</h2>
+            <nav class="d-inline-flex mb-lg-5" aria-label="Breadcrumb">
+                <ol class="list-unstyled d-flex align-items-center m-0">
+                    <li><a class="text-white" href="index.html">Inicio</a></li>
+                    <li class="px-2 text-white" aria-hidden="true">/</li>
+                    <li class="text-white" aria-current="page">Nosotros</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN ACERCA DE -->
+    <main class="container-fluid py-5">
+        <div class="container">
+            <!-- Encabezado de la Sección -->
+            <header class="section-title text-center">
+                <h2 class="text-primary text-uppercase" style="letter-spacing: 5px;">Acerca de Nosotros</h2>
+                <h3 class="display-4">Sirviendo Desde 1950</h3>
+            </header>
+
             <div class="row">
-                <div class="col-lg-4 py-0 py-lg-5">
-                    <h1 class="mb-3">Nuestra Historia</h1>
-                    <h5 class="mb-3">En KOPPEE, una cafetería en Popayan, Ana y Javier crearon un rincón acogedor que se convirtió en el favorito de la ciudad.</h5>
-                    <p>Nuestro sitio web te invita a explorar su menú, leer testimonios de clientes satisfechos y mantenerse al tanto de eventos y ofertas especiales.</p>
-                    <a href="" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Saber Más</a>
-                </div>
+                <!-- Historia -->
+                <article class="col-lg-4 py-0 py-lg-5">
+                    <h3 class="mb-3">Nuestra Historia</h3>
+                    <h4 class="h5 mb-3">Tradición y Excelencia en Cada Taza</h4>
+                    <p>Desde 1950, KOPPEE ha sido un referente en la cultura cafetera de Popayán. Comenzamos como una pequeña cafetería familiar y hemos crecido manteniendo nuestra pasión por el café de calidad y el servicio excepcional.</p>
+                    <a href="" class="btn btn-secondary font-weight-bold py-2 px-4 mt-2" aria-label="Conoce más sobre nuestra historia">Conoce Más</a>
+                </article>
+
+                <!-- Imagen Principal -->
                 <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.png" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="img/about.png" alt="Interior de nuestra cafetería KOPPEE" style="object-fit: cover;" loading="lazy">
                     </div>
                 </div>
-                <div class="col-lg-4 py-0 py-lg-5">
-                    <h1 class="mb-3">Nuestra Visión</h1>
-                    <p>En KOPPEE, nuestra visión es ser el refugio urbano donde cada taza de café cuenta una historia y cada rincón refleja calidez y comunidad.</p>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Experiencia Acogedora</h5>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Café de Calidad</h5>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Conexión Comunitaria</h5>
-                    <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Saber Más</a>
-                </div>
+
+                <!-- Visión -->
+                <article class="col-lg-4 py-0 py-lg-5">
+                    <h3 class="mb-3">Nuestra Visión</h3>
+                    <p>Nos esforzamos por ser más que una cafetería; buscamos ser un espacio donde la comunidad se reúne, donde cada taza cuenta una historia y donde la calidad del café se combina con un servicio excepcional.</p>
+                    <ul class="list-unstyled" aria-label="Nuestros compromisos">
+                        <li class="mb-3"><i class="fa fa-check text-primary mr-3" aria-hidden="true"></i>Compromiso con la calidad del café</li>
+                        <li class="mb-3"><i class="fa fa-check text-primary mr-3" aria-hidden="true"></i>Servicio personalizado y amable</li>
+                        <li class="mb-3"><i class="fa fa-check text-primary mr-3" aria-hidden="true"></i>Ambiente acogedor y familiar</li>
+                    </ul>
+                    <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2" aria-label="Conoce más sobre nuestra visión">Conoce Más</a>
+                </article>
             </div>
         </div>
-    </div>
-    <!-- Fin de Acerca de -->
+    </main>
 
 
-    <!-- Inicio del Pie de Página -->
-    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+    <!-- FOOTER -->
+    <footer class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <!-- Información de Contacto -->
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Contáctanos</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Calle, Popayan, Colombia.</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <address class="mb-0">
+                    <p><i class="fa fa-map-marker-alt mr-2" aria-hidden="true"></i>Calle 5 #8-58, Popayán, Colombia</p>
+                    <p><i class="fa fa-phone-alt mr-2" aria-hidden="true"></i><a href="tel:+573225550198" class="text-white">+57 322 555 0198</a></p>
+                    <p class="m-0"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><a href="mailto:info@koppee.com" class="text-white">info@koppee.com</a></p>
+                </address>
             </div>
+
+            <!-- Redes Sociales -->
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Síguenos</h4>
-                <p>En KOPPEE, cada taza de café es un abrazo cálido para el alma y una sonrisa para el corazón.</p>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <p>Mantente conectado con nosotros en redes sociales para conocer nuestras últimas novedades y eventos especiales.</p>
+                <nav class="d-flex justify-content-start" aria-label="Redes sociales">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#" aria-label="Síguenos en Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#" aria-label="Síguenos en Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#" aria-label="Síguenos en LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" href="#" aria-label="Síguenos en Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                </nav>
             </div>
+
+            <!-- Horario -->
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Horario de Apertura</h4>
-                <div>
-                    <h6 class="text-white text-uppercase">Lunes - Viernes</h6>
-                    <p>8.00 AM - 8.00 PM</p>
-                    <h6 class="text-white text-uppercase">Sábado - Domingo</h6>
-                    <p>2.00 PM - 8.00 PM</p>
-                </div>
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Horario</h4>
+                <section aria-label="Horario de atención">
+                    <div class="mb-4">
+                        <h5 class="text-white text-uppercase h6">Lunes - Viernes</h5>
+                        <p>8:00 AM - 8:00 PM</p>
+                    </div>
+                    <div>
+                        <h5 class="text-white text-uppercase h6">Sábado - Domingo</h5>
+                        <p>2:00 PM - 8:00 PM</p>
+                    </div>
+                </section>
             </div>
+
+            <!-- Newsletter -->
             <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Boletín</h4>
-                <p>Suscríbete a nuestro boletín y recibe lo mejor de KOPPEE directamente en tu bandeja: ofertas exclusivas, eventos especiales y noticias frescas para que nunca te pierdas de nada. ¡Únete a nuestra comunidad hoy mismo!</p>
-                <div class="w-100">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
+                <p>Suscríbete a nuestro newsletter para recibir noticias sobre eventos especiales y promociones exclusivas.</p>
+                <form class="w-100" aria-label="Formulario de suscripción al newsletter">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Correo Electrónico">
+                        <label for="newsletterEmail" class="sr-only">Correo electrónico</label>
+                        <input type="email" id="newsletterEmail" class="form-control border-light" style="padding: 25px;" placeholder="Tu Email" aria-required="true">
                         <div class="input-group-append">
-                            <button class="btn btn-primary font-weight-bold px-3">Suscribirse</button>
+                            <button type="submit" class="btn btn-primary font-weight-bold px-3" aria-label="Suscribirse al newsletter">Inscríbete</button>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
+
+        <!-- Copyright -->
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Dominio</a>. Todos los Derechos Reservados.</a></p>
-            <p class="m-0 text-white">Diseñado por <a class="font-weight-bold" href="https://htmlcodex.com">HTML Codex</a></p>
+            <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">KOPPEE</a>. Todos los derechos reservados.</p>
+            <p class="m-0 text-white">Diseñado por <a class="font-weight-bold" href="https://htmlcodex.com" rel="noopener noreferrer" target="_blank">HTML Codex</a></p>
         </div>
-    </div>
-    <!-- Fin del Pie de Página -->
+    </footer>
 
 
-    <!-- Volver Arriba -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- Botón Volver Arriba -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" aria-label="Volver al inicio de la página" role="button">
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+    </a>
 
+    <!-- SCRIPTS -->
+    <!-- jQuery y Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
 
-    <!-- Bibliotecas de JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins de Animación y UI -->
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Plugins de Fecha y Hora -->
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Archivo de JavaScript para Contacto -->
+    <!-- Scripts de Validación y Contacto -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- JavaScript de la Plantilla -->
+    <!-- Script Principal -->
     <script src="js/main.js"></script>
+
+    <!-- Script de Inicialización -->
+    <script>
+        $(document).ready(function() {
+            // Inicializar el botón "Volver Arriba"
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn('slow');
+                } else {
+                    $('.back-to-top').fadeOut('slow');
+                }
+            });
+            $('.back-to-top').click(function() {
+                $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+                return false;
+            });
+
+            // Actualizar el año del copyright automáticamente
+            $('#currentYear').text(new Date().getFullYear());
+        });
+    </script>
 </body>
 
 </html>
